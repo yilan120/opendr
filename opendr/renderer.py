@@ -20,12 +20,12 @@ from .common import draw_visibility_image, draw_barycentric_image, draw_colored_
 from .topology import get_vertices_per_edge, get_faces_per_edge
 
 if platform.system()=='Darwin':
-    from .contexts.ctx_mac import OsContext
+    from opendr.contexts.ctx_mac import OsContext
 else:
-    from .contexts.ctx_mesa import OsContext
+    from opendr.contexts.ctx_mesa import OsContext
 
 from chumpy import *
-from .contexts._constants import *
+from opendr.contexts._constants import *
 from chumpy.utils import row, col
 
 
