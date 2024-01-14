@@ -43,6 +43,7 @@ def download_osmesa():
             wget('http://files.is.tue.mpg.de/mloper/opendr/osmesa/%s' % (osmesa_fname,), dest_fname=zip_fname)
 
         assert(os.path.exists(zip_fname))
+        print(zip_fname)
         with zipfile.ZipFile(zip_fname, 'r') as z:
             for f in [x for x in z.namelist() if re.search('[ah]$', x)]:
                 z.extract(f, path=context_dir)

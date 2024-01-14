@@ -15,8 +15,9 @@ ctypedef size_t	ptrdiff_t
 
 
 include "_functions.pyx"
-from _constants import *
-
+# import sys
+# sys.path.append("/data/home/acw773/haoheliu/opendr")
+from opendr.contexts._constants import *
 
 def mc(func):
     def with_make_current(self, *args, **kwargs):

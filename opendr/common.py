@@ -17,7 +17,7 @@ except:
     from numpy import nanmean as nanmean_impl
 
 from chumpy.utils import row, col
-from .contexts._constants import *
+from opendr.contexts._constants import *
 
 def nanmean(a, axis):
     # don't call nan_to_num in here, unless you check that
