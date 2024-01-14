@@ -36,6 +36,7 @@ def download_osmesa():
         sysinfo = platform.uname()
         osmesa_fname = 'OSMesa.%s.%s.zip' % (sysinfo[0], sysinfo[-2])
         zip_fname = os.path.join(context_dir, osmesa_fname)
+        print(zip_fname)
         if not os.path.exists(zip_fname):
             print(("Downloading %s" % osmesa_fname))
             # MPI url: http://files.is.tue.mpg.de/mloper/opendr/osmesa/%s
