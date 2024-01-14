@@ -3145,7 +3145,6 @@ static const char __pyx_k_TypeError[] = "TypeError";
 static const char __pyx_k_Uniform1f[] = "Uniform1f";
 static const char __pyx_k_Uniform1i[] = "Uniform1i";
 static const char __pyx_k_Uniform4f[] = "Uniform4f";
-static const char __pyx_k_constants[] = "_constants";
 static const char __pyx_k_isenabled[] = "isenabled";
 static const char __pyx_k_maxLength[] = "maxLength";
 static const char __pyx_k_metaclass[] = "__metaclass__";
@@ -3309,6 +3308,7 @@ static const char __pyx_k_OsContextBase_LoadIdentity[] = "OsContextBase.LoadIden
 static const char __pyx_k_OsContextBase_ShaderSource[] = "OsContextBase.ShaderSource";
 static const char __pyx_k_OsContextBase_TexImage2Dub[] = "OsContextBase.TexImage2Dub";
 static const char __pyx_k_OsContextBase_uPerspective[] = "OsContextBase.uPerspective";
+static const char __pyx_k_opendr_contexts__constants[] = "opendr.contexts._constants";
 static const char __pyx_k_pyx_unpickle_OsContextBase[] = "__pyx_unpickle_OsContextBase";
 static const char __pyx_k_OsContextBase_ClearBufferfv[] = "OsContextBase.ClearBufferfv";
 static const char __pyx_k_OsContextBase_ColorPointer0[] = "OsContextBase.ColorPointer0";
@@ -3758,7 +3758,6 @@ typedef struct {
   PyObject *__pyx_n_s_class_getitem;
   PyObject *__pyx_n_s_cline_in_traceback;
   PyObject *__pyx_n_s_color;
-  PyObject *__pyx_n_s_constants;
   PyObject *__pyx_n_s_coord;
   PyObject *__pyx_n_s_copy;
   PyObject *__pyx_n_s_count;
@@ -3852,6 +3851,7 @@ typedef struct {
   PyObject *__pyx_kp_s_numpy_core_umath_failed_to_impor;
   PyObject *__pyx_n_s_objCoords;
   PyObject *__pyx_n_s_ones_like;
+  PyObject *__pyx_n_s_opendr_contexts__constants;
   PyObject *__pyx_kp_s_opendr_contexts_ctx_base_pyx;
   PyObject *__pyx_n_s_opendr_contexts_ctx_mesa;
   PyObject *__pyx_kp_s_opendr_contexts_ctx_mesa_pyx;
@@ -4447,7 +4447,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_class_getitem);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
   Py_CLEAR(clear_module_state->__pyx_n_s_color);
-  Py_CLEAR(clear_module_state->__pyx_n_s_constants);
   Py_CLEAR(clear_module_state->__pyx_n_s_coord);
   Py_CLEAR(clear_module_state->__pyx_n_s_copy);
   Py_CLEAR(clear_module_state->__pyx_n_s_count);
@@ -4541,6 +4540,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_s_numpy_core_umath_failed_to_impor);
   Py_CLEAR(clear_module_state->__pyx_n_s_objCoords);
   Py_CLEAR(clear_module_state->__pyx_n_s_ones_like);
+  Py_CLEAR(clear_module_state->__pyx_n_s_opendr_contexts__constants);
   Py_CLEAR(clear_module_state->__pyx_kp_s_opendr_contexts_ctx_base_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_opendr_contexts_ctx_mesa);
   Py_CLEAR(clear_module_state->__pyx_kp_s_opendr_contexts_ctx_mesa_pyx);
@@ -5114,7 +5114,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_class_getitem);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
   Py_VISIT(traverse_module_state->__pyx_n_s_color);
-  Py_VISIT(traverse_module_state->__pyx_n_s_constants);
   Py_VISIT(traverse_module_state->__pyx_n_s_coord);
   Py_VISIT(traverse_module_state->__pyx_n_s_copy);
   Py_VISIT(traverse_module_state->__pyx_n_s_count);
@@ -5208,6 +5207,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_s_numpy_core_umath_failed_to_impor);
   Py_VISIT(traverse_module_state->__pyx_n_s_objCoords);
   Py_VISIT(traverse_module_state->__pyx_n_s_ones_like);
+  Py_VISIT(traverse_module_state->__pyx_n_s_opendr_contexts__constants);
   Py_VISIT(traverse_module_state->__pyx_kp_s_opendr_contexts_ctx_base_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_opendr_contexts_ctx_mesa);
   Py_VISIT(traverse_module_state->__pyx_kp_s_opendr_contexts_ctx_mesa_pyx);
@@ -5809,7 +5809,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_class_getitem __pyx_mstate_global->__pyx_n_s_class_getitem
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
 #define __pyx_n_s_color __pyx_mstate_global->__pyx_n_s_color
-#define __pyx_n_s_constants __pyx_mstate_global->__pyx_n_s_constants
 #define __pyx_n_s_coord __pyx_mstate_global->__pyx_n_s_coord
 #define __pyx_n_s_copy __pyx_mstate_global->__pyx_n_s_copy
 #define __pyx_n_s_count __pyx_mstate_global->__pyx_n_s_count
@@ -5903,6 +5902,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_s_numpy_core_umath_failed_to_impor __pyx_mstate_global->__pyx_kp_s_numpy_core_umath_failed_to_impor
 #define __pyx_n_s_objCoords __pyx_mstate_global->__pyx_n_s_objCoords
 #define __pyx_n_s_ones_like __pyx_mstate_global->__pyx_n_s_ones_like
+#define __pyx_n_s_opendr_contexts__constants __pyx_mstate_global->__pyx_n_s_opendr_contexts__constants
 #define __pyx_kp_s_opendr_contexts_ctx_base_pyx __pyx_mstate_global->__pyx_kp_s_opendr_contexts_ctx_base_pyx
 #define __pyx_n_s_opendr_contexts_ctx_mesa __pyx_mstate_global->__pyx_n_s_opendr_contexts_ctx_mesa
 #define __pyx_kp_s_opendr_contexts_ctx_mesa_pyx __pyx_mstate_global->__pyx_kp_s_opendr_contexts_ctx_mesa_pyx
@@ -28266,7 +28266,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_class_getitem, __pyx_k_class_getitem, sizeof(__pyx_k_class_getitem), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
     {&__pyx_n_s_color, __pyx_k_color, sizeof(__pyx_k_color), 0, 0, 1, 1},
-    {&__pyx_n_s_constants, __pyx_k_constants, sizeof(__pyx_k_constants), 0, 0, 1, 1},
     {&__pyx_n_s_coord, __pyx_k_coord, sizeof(__pyx_k_coord), 0, 0, 1, 1},
     {&__pyx_n_s_copy, __pyx_k_copy, sizeof(__pyx_k_copy), 0, 0, 1, 1},
     {&__pyx_n_s_count, __pyx_k_count, sizeof(__pyx_k_count), 0, 0, 1, 1},
@@ -28360,6 +28359,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_s_numpy_core_umath_failed_to_impor, __pyx_k_numpy_core_umath_failed_to_impor, sizeof(__pyx_k_numpy_core_umath_failed_to_impor), 0, 0, 1, 0},
     {&__pyx_n_s_objCoords, __pyx_k_objCoords, sizeof(__pyx_k_objCoords), 0, 0, 1, 1},
     {&__pyx_n_s_ones_like, __pyx_k_ones_like, sizeof(__pyx_k_ones_like), 0, 0, 1, 1},
+    {&__pyx_n_s_opendr_contexts__constants, __pyx_k_opendr_contexts__constants, sizeof(__pyx_k_opendr_contexts__constants), 0, 0, 1, 1},
     {&__pyx_kp_s_opendr_contexts_ctx_base_pyx, __pyx_k_opendr_contexts_ctx_base_pyx, sizeof(__pyx_k_opendr_contexts_ctx_base_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_opendr_contexts_ctx_mesa, __pyx_k_opendr_contexts_ctx_mesa, sizeof(__pyx_k_opendr_contexts_ctx_mesa), 0, 0, 1, 1},
     {&__pyx_kp_s_opendr_contexts_ctx_mesa_pyx, __pyx_k_opendr_contexts_ctx_mesa_pyx, sizeof(__pyx_k_opendr_contexts_ctx_mesa_pyx), 0, 0, 1, 0},
@@ -30216,7 +30216,7 @@ if (!__Pyx_RefNanny) {
   /* "opendr/contexts/ctx_base.pyx":18
  * 
  * include "_functions.pyx"
- * from _constants import *             # <<<<<<<<<<<<<<
+ * from opendr.contexts._constants import *             # <<<<<<<<<<<<<<
  * 
  * 
  */
@@ -30225,7 +30225,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s__23);
   __Pyx_GIVEREF(__pyx_n_s__23);
   if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s__23)) __PYX_ERR(0, 18, __pyx_L1_error);
-  __pyx_t_4 = __Pyx_Import(__pyx_n_s_constants, __pyx_t_2, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Import(__pyx_n_s_opendr_contexts__constants, __pyx_t_2, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_import_star(__pyx_t_4) < 0) __PYX_ERR(0, 18, __pyx_L1_error);
